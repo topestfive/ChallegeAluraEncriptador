@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
         <title>Encriptador - Challenge Alura Latam</title>
     </head>
     <body>
@@ -12,7 +14,7 @@
         <main>
             <section class="entradaTexto">
                 <form>
-                    <textarea  id="textoUsuario" class="input-padron" placeholder="Ingrese texto a encriptar" required></textarea>
+                    <textarea  id="textoEntradaUsuario" class="input-padron" placeholder="Ingrese texto a encriptar" required></textarea>
                     <div class="contenedorBotonesPrincipales">
                         <button class="botonEncriptar">Encriptar</button>
                         <button class="botonDesencriptar">Desencriptar</button>
@@ -20,6 +22,7 @@
                 </form>
             </section>
             <section class="salidaTexto">
+                <p class="textoSalidaUsuario"></p>
             </section>
         </main>
         <footer>
