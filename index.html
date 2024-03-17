@@ -5,16 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Encriptador - Challenge Alura Latam</title>
     </head>
     <body>
         <header>
-            <a target="_blank" href="https://www.aluracursos.com/"><img src="recursos/LogoAlura.png" alt="Logo Alura"></a>
+            <a target="_blank" href="https://www.aluracursos.com/"><img src="recursos/LogoAlura.svg" alt="Logo Alura" class="imagenLgo"></a>
         </header>
         <main>
             <section class="entradaTexto">
                 <form>
-                    <textarea  id="textoEntradaUsuario" class="input-padron" placeholder="Ingrese texto a encriptar" required></textarea>
+                    <textarea  id="textoEntradaUsuario" class="input-padron" placeholder="Ingrese texto aqui" required></textarea>
+                    <div class="aviso">
+                        <img src="recursos/exclamacion.svg" alt="exclamación" class="excalmacion">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    
                     <div class="contenedorBotonesPrincipales">
                         <button class="botonEncriptar">Encriptar</button>
                         <button class="botonDesencriptar">Desencriptar</button>
@@ -22,7 +28,15 @@
                 </form>
             </section>
             <section class="salidaTexto">
-                <p class="textoSalidaUsuario"></p>
+                <div class="noTextoSalida">
+                    <img src="recursos/Muñeco.svg" alt="muñeco con una lupa">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="siTextoSalida">
+                    <p class="textoSalidaUsuario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quod et provident, possimus maiores sint quia pariatur, voluptatum quibusdam, in sapiente tempora nostrum vero id molestias veniam quas? Nobis, sed?</p>
+                    <button class="botonCopiar">Copiar</button>
+                </div>
             </section>
         </main>
         <footer>
