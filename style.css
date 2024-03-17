@@ -1,0 +1,156 @@
+body{
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+    background: #F3F5FC;
+}
+
+/*CSS del main*/
+
+header{
+    margin: 2% 0 2vh 2%;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entradaTexto{
+    display: inline-flex;
+    width: 64%;
+}
+
+main form{
+    width: 100%;
+    margin:  3%  3% 0 16%;
+}
+
+.input-padron{
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 48px;
+
+    background: #F3F5FC;
+    border: none;
+    resize: none;
+    border-radius: 8px;
+
+    width: 77%;
+    height: 62vh;
+    margin: 0 0 ;
+
+    &::placeholder{
+        color: #0A3871;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.aviso{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    & > p{
+        color: #495057;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.excalmacion{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.contenedorBotonesPrincipales{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.botonEncriptar, .botonDesencriptar{
+    margin-top: 2%;
+    width: 43%;
+    height: 67px;
+    border: 0;
+    border-radius: 24px;
+    line-height: 19.36px;
+    font-size: 16px;
+}
+
+.botonEncriptar{
+    background: #0A3871;
+    color: #ffffff;
+    padding: 24px;
+
+    &:hover{
+        background: #1C5AA3;
+    }
+}
+
+.botonDesencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    padding: 24px;
+
+    &:hover{
+        background: #ffffff;
+    }
+}
+
+.salidaTexto{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    background: #ffffff;
+    margin: 0 2%;
+    border-radius: 32px;
+}
+
+.noTextoSalida{
+    display: none;
+    width: 90%;
+    padding: 8%;
+
+    & > p{
+        padding-top: 16px;
+        text-align: center;
+        line-height: 24px;
+        color: #495057;
+    }
+
+    & img + p{
+        font-size: 24px;
+        font-weight: 700;
+        color: #343A40;
+        line-height: 28.8px;
+    }
+}
+
+.noTextoSalida img{
+    width: 84%;
+}
+
+.siTextoSalida{
+    
+    width: 90%;
+    height: 83%;
+
+    & > p{
+        line-height: 36x;
+        color: #495057;
+        font-size: 24px;
+        
+    }
+}
