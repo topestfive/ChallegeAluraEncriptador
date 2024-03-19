@@ -14,7 +14,7 @@
         </header>
         <main>
             <section class="entradaTexto">
-                <form>
+                <div class="contenedorEntradatexto">
                     <textarea  id="textoEntradaUsuario" class="input-padron" placeholder="Ingrese texto aqui" required></textarea>
                     <div class="aviso">
                         <img src="recursos/exclamacion.svg" alt="exclamación" class="excalmacion">
@@ -22,10 +22,10 @@
                     </div>
                     
                     <div class="contenedorBotonesPrincipales">
-                        <button class="botonEncriptar">Encriptar</button>
-                        <button class="botonDesencriptar">Desencriptar</button>
+                        <button onclick="encriptar()"  class="botonEncriptar">Encriptar</button>
+                        <button onclick="desencriptar()"  class="botonDesencriptar">Desencriptar</button>
                     </div>
-                </form>
+                </div>
             </section>
             <section class="salidaTexto">
                 <div class="noTextoSalida">
@@ -35,12 +35,14 @@
                 </div>
                 <div class="siTextoSalida">
                     <p id="textoSalidaUsuario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quod et provident, possimus maiores sint quia pariatur, voluptatum quibusdam, in sapiente tempora nostrum vero id molestias veniam quas? Nobis, sed?</p>
-                    <button class="botonCopiar">Copiar</button>
+                    <button  onclick="copiar()" class="botonCopiar">Copiar</button>
                 </div>
             </section>
         </main>
         <footer>
             <p class="copyright">&copy Copyright Esteban Gutierrez - 2024</p>
         </footer>
+        <script src="encriptar_desencriptar.js" defer></script>
     </body>
+    
 </html>
