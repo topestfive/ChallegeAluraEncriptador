@@ -110,19 +110,21 @@ main{
 }
 
 .salidaTexto{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 28%;
     background: #ffffff;
     margin: 0 2%;
     border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
 }
 
 .noTextoSalida{
-    display: inline-block;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
-    padding: 8%;
 
     & > p{
         padding-top: 16px;
@@ -144,15 +146,19 @@ main{
 }
 
 .siTextoSalida{
-    display: none;
+    flex-direction: column;
+    justify-content: space-between;
     width: 84%;
     height: 93%;
+    overflow: auto;
 
     & > p{
         line-height: 36px;
         color: #495057;
         font-size: 24px;
         height: 88%;
+        overflow: auto;
+        word-wrap: break-word;
     }
 }
 
@@ -183,4 +189,66 @@ footer{
     text-align: center;
     color: #8b8e91;
     font-size: 14px;
+}
+
+@media screen and (max-width:1024px){
+
+    header{
+        margin-top: 5%;
+    }
+
+    .entradaTexto{
+        width: 100%;
+        margin: 0;
+    }
+    
+    section{
+        display: block;
+    }
+
+    .contenedorEntradatexto{
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+    }
+
+    .salidaTexto{
+        width: 90%;
+        margin: 0 5%;
+        height: auto;
+    }
+
+    .input-padron{
+        width: 100%;
+        height: 48vh;
+        margin: 0 0 ;
+    
+        &::placeholder{
+            color: #0A3871;
+        }
+    
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 48%;
+    }
+
+    .noTextoSalida{
+        margin: 2% 0;
+
+        & img{
+            display: none;
+        }
+
+        & p:nth-child(3){
+            padding-bottom: 2%;
+        }
+    }
+
+    .siTextoSalida p{
+        margin: 2% 0;
+    }
+
 }
