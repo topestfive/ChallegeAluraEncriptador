@@ -91,7 +91,7 @@ main{
 .botonEncriptar{
     background: #0A3871;
     color: #ffffff;
-    padding: 24px;
+    padding: 2%;
 
     &:hover{
         background: #1C5AA3;
@@ -102,7 +102,7 @@ main{
     background: #D8DFE8;
     border: 1px solid #0A3871;
     color: #0A3871;
-    padding: 24px;
+    padding: 2%;
 
     &:hover{
         background: #ffffff;
@@ -185,13 +185,13 @@ main{
 }
 
 footer{
-    margin: 1.7% 0 1% 0;
+    margin: 1.7% 0 1.7% 0;
     text-align: center;
     color: #8b8e91;
     font-size: 14px;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1007px){
 
     header{
         margin-top: 5%;
@@ -250,5 +250,20 @@ footer{
     .siTextoSalida p{
         margin: 2% 0;
     }
+}
 
+@media screen and (max-width:640px){
+    
+    .input-padron{
+        height: 45vh;
+    }
+
+    .contenedorBotonesPrincipales{
+        flex-direction: column;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 100%;
+        padding-top: 2%;
+    }
 }
