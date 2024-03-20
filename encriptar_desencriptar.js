@@ -11,12 +11,12 @@ let textoSalida;
 
 function mostrarContenido(elemento,texto){
     if(texto==""){
-        noTexto.style.display="inline-block";
+        noTexto.style.display="flex";
         siTexto.style.display="none";
     }else{
         textoSalida = texto;
         noTexto.style.display="none";
-        siTexto.style.display="inline-block";    
+        siTexto.style.display="flex";    
         document.querySelector(elemento).innerHTML = texto;
         document.getElementById(elemento).scrollIntoView();
     }
